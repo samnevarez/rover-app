@@ -1,0 +1,242 @@
+/*!
+ * Start Bootstrap - Grayscale v5.0.8 (https://startbootstrap.com/template-overviews/grayscale)
+ * Copyright 2013-2020 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-grayscale/blob/master/LICENSE)
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+  border: solid red .25px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+/* Body */
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 14px;
+  padding: 8px 0;
+}
+
+h2 {
+  padding: 16px 0;
+  font-weight: bold;
+  font-size: 32px;
+  text-align: center;
+}
+
+.container {
+  display: -webkit-box;
+  display: flex;
+  width: 100%;
+}
+
+/* Header */
+header {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 8fr;
+  grid-template-rows: 40px auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  height: 40px;
+  -webkit-box-align: end;
+          align-items: flex-end;
+  background: #20c063;
+  -webkit-box-align: center;
+          align-items: center;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+header .trulia-logo img {
+  display: -webkit-box;
+  display: flex;
+  height: 20px;
+  width: 100px;
+  background: red;
+}
+
+header nav {
+  width: 100%;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  -webkit-box-pack: end;
+          justify-content: flex-end;
+}
+
+header nav a {
+  color: white;
+  padding: 4px 16px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+header nav a:last-child {
+  padding: 4px 0 4px 8px;
+}
+
+.block-wrapper {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 48px auto;
+  padding: 0 16px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  box-sizing: border-box;
+  background: #e3e4e6;
+}
+
+.listing-blocks {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  grid-gap: 16px 16px;
+  margin: 16px 0;
+  height: auto;
+}
+
+.listing-blocks .trulia-house-image {
+  height: 240px;
+  background: red;
+  overflow: hidden;
+}
+
+.listing-blocks .trulia-house-image .lable-new {
+  width: 30px;
+  height: 30px;
+  background-color: green;
+  position: absolute;
+  z-index: 1;
+}
+
+.listing-blocks .trulia-house-image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.listing-blocks .card {
+  -webkit-box-pack: space-evenly;
+          justify-content: space-evenly;
+  border: 1px solid #dbdbdb;
+}
+
+.listing-blocks .card ul {
+  list-style: none;
+}
+
+.listing-blocks .card ul .trulia-house-price {
+  color: purple;
+  padding: 0 0 8px 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.listing-blocks .card ul .trulia-house-desc {
+  color: blue;
+}
+
+.listing-blocks .card ul .trulia-house-loc {
+  color: black;
+}
+
+.listing-blocks .card ul li {
+  color: red;
+}
+
+.listing-blocks .card p {
+  margin: 0px 0 24px 0;
+}
+
+.listing-blocks .trulia-house-facts {
+  padding: 8px;
+  background-color: white;
+}
+
+.listing-blocks .trulia-house-facts img {
+  height: 16px;
+}
+
+.listing-blocks .trulia-house-stats ul {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  -webkit-box-pack: start;
+          justify-content: flex-start;
+  margin-right: 16px;
+}
+
+.listing-blocks .trulia-house-stats ul li {
+  margin-right: 8px;
+}
+
+footer {
+  background: black;
+}
+
+footer .content {
+  max-width: 1160px;
+  color: white;
+  background: black;
+  height: auto;
+  padding: 24px 16px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .listing-blocks {
+    display: grid;
+    grid-template-columns: 1fr;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-direction: row;
+    grid-gap: 16px 16px;
+    margin: 16px 0;
+    height: auto;
+  }
+  .listing-blocks .trulia-house-image {
+    max-width: 100%;
+    height: 180px;
+    position: relative;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
+    overflow: hidden;
+  }
+}
+
+/* Background image links */
+/* Hero: https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/melbourne.jpg */
+/* Fitzroy: https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/fitzroy.jpg */
+/* St. Kilda: https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/st-kilda.jpg  */
+/* CBD: https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/central-business-district.jpg */
